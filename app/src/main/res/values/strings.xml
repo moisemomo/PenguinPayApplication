@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Penguin Pay</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="amount_to_send">Amount to Send</string>
+    <string name="amount_to_receive">Amount to Receive</string>
+    <string name="send_money">Send Money</string>
+    <string name="field_mandatory">This field is mandatory</string>
+    <string name="error_getting_rates">Error getting Rates</string>
+    <string name="selected_rate">"1USD = %s "</string>
+    <string name="close">Close</string>
+    <string name="transaction_processing">Your transaction is being sent</string>
+</resources>

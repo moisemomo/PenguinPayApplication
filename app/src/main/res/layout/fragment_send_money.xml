@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".sendmoney.SendMoneyFragment">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/first_name"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               android:layout_width="match_parent"
+               android:layout_marginStart="@dimen/dimen_16"
+               android:layout_marginEnd="@dimen/dimen_16"
+               android:layout_marginTop="@dimen/dimen_16"
+               android:layout_height="wrap_content"
+               android:hint="@string/first_name">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:imeOptions="actionNext"
+                   android:inputType="textCapWords"
+                   android:maxLines="1"
+                   android:textColor="@color/black"
+                   android:textSize="@dimen/size_18" />
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/last_name"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               android:layout_width="match_parent"
+               android:layout_marginStart="@dimen/dimen_16"
+               android:layout_marginEnd="@dimen/dimen_16"
+               android:layout_marginTop="@dimen/dimen_16"
+               android:layout_height="wrap_content"
+               android:hint="@string/last_name">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:imeOptions="actionNext"
+                   android:inputType="textCapWords"
+                   android:maxLines="1"
+                   android:textColor="@color/black"
+                   android:textSize="@dimen/size_18" />
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="@dimen/dimen_16"
+               android:layout_marginEnd="@dimen/dimen_16"
+               android:layout_marginTop="@dimen/dimen_16"
+               android:id="@+id/countries"
+               />
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/recipient_phone_number"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               android:layout_width="match_parent"
+               android:layout_marginStart="@dimen/dimen_16"
+               android:layout_marginEnd="@dimen/dimen_16"
+               android:layout_marginTop="@dimen/dimen_16"
+               android:layout_height="wrap_content"
+               android:hint="@string/phone_number">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:imeOptions="actionNext"
+                   android:inputType="phone"
+                   android:maxLines="1"
+                   android:textColor="@color/black"
+                   android:textSize="@dimen/size_18" />
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/amount_sender"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               android:layout_width="match_parent"
+               android:layout_marginStart="@dimen/dimen_16"
+               android:layout_marginEnd="@dimen/dimen_16"
+               android:layout_marginTop="@dimen/dimen_16"
+               android:layout_height="wrap_content"
+               android:hint="@string/amount_to_send">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:imeOptions="actionNext"
+                   android:inputType="number"
+                   android:digits="01"
+                   android:maxLines="1"
+                   android:textColor="@color/black"
+                   android:textSize="@dimen/size_18" />
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/recipient_amount"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               android:layout_width="match_parent"
+               android:layout_marginStart="@dimen/dimen_16"
+               android:layout_marginEnd="@dimen/dimen_16"
+               android:layout_marginTop="@dimen/dimen_16"
+               android:layout_height="wrap_content"
+               android:hint="@string/amount_to_receive">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:imeOptions="actionNext"
+                   android:inputType="textImeMultiLine"
+                   android:digits="01"
+                   android:enabled="false"
+                   android:maxLines="3"
+                   android:textColor="@color/black"
+                   android:textSize="@dimen/size_18" />
+
+           </com.google.android.material.textfield.TextInputLayout>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/rate"
+               android:gravity="center"
+               android:layout_gravity="center_horizontal"
+               tools:text="1USD : 10001111"
+               android:textSize="@dimen/size_16"
+               android:layout_marginTop="@dimen/dimen_8"
+               android:layout_marginStart="@dimen/dimen_16"
+               android:layout_marginEnd="@dimen/dimen_16"
+               />
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/send_money"
+               android:text="@string/send_money"
+               android:layout_margin="@dimen/dimen_40"
+               android:layout_marginTop="@dimen/dimen_40"
+               />
+       </LinearLayout>
+
+</ScrollView>
