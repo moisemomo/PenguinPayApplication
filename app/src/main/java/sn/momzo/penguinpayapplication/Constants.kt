@@ -10,7 +10,7 @@ object Constants {
         Country("Kenya",Currency.KES.name, 254,9,"### ######"),
         Country("Nigeria",Currency.NGN.name, 234,7,"### ####"),
         Country("Tanzania",Currency.TZS.name, 255,9,"### ######"),
-        Country("Uganda",Currency.UDX.name, 256,7,"### ####")
+        Country("Uganda",Currency.UGX.name, 256,7,"### ####")
     )
 }
-enum class Currency{ KES, NGN, TZS,UDX}
+enum class Currency{ KES, NGN, TZS,UGX}

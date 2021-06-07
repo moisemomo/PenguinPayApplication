@@ -106,7 +106,8 @@ class SendMoneyFragment : Fragment() {
 
     private fun getSelectedRate() {
         binding.rate.text = getString(R.string.selected_rate,
-            sendMoneyViewModel.convertRateToBinary(selectedCountry?.currencySymbol.orEmpty()))
+            sendMoneyViewModel.convertRateToBinary(selectedCountry?.currencySymbol.orEmpty()),
+            selectedCountry?.currencySymbol.orEmpty())
     }
 
     private fun getRates() {
